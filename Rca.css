@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body{
+    background-color: #999;
+}
+header{
+    padding: 20px 8%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+} 
+.logo{
+    display: flex;
+    justify-content: space-around ;
+}
+.logo span{
+    color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    transform: translateY(100px);
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    margin: 10px;
+    border-radius: 6px;
+    background-color: red;
+    
+}
+ul{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    list-style: none;
+}
+ul li{
+    padding: 10px 25px;
+}
+ul li a{
+    text-decoration: 0;
+    color: blue;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: 600px;
+}
+ul li a:hover{
+    background-color: red;
+    padding: 15px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.drapeau{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.drapeau .drapeau1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+}
+.drapeau1 h1{
+    font-size: 20px;
+    font-weight: bold;
+   text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: blue;
+}
+.drapeau1 img{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 10px 10px 50px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.drapeau1 img:hover{
+    transform: scale(0.5);
+   
+}
+
+
+.home .galerie .image{
+    width: 24%;
+    height: 350px;
+    margin: 30px 0;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+    
+}
+.home .galerie .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.home .galerie{
+    display: flex;
+    justify-content: space-between;
+}
+.home .galerie .description{
+    transform: translateY(350px);
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.home .galerie .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.home .galerie .image:hover .description{
+    transform: translateY(-120px);
+}
+.home .galerie .description h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.home .galerie .description p{
+    font-size: 14px;
+    color: #999;
+}
+.home .galerie .image:hover img{
+    transform: translateY(-120px);
+}
+.desc{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.desc .buttons button{
+    background-color: #f6d238;
+    border: 0;
+    cursor: pointer;
+    border: 2px solid #f6d238;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.desc .buttons button:hover{
+    background-color: #f1f1f1;
+    transform: rotate(10deg);
+}
+.second{
+    margin-left: 20px;
+}
+
+.desc .buttons button i{
+    font-size: 25px;
+
+}
+.desc .small-desc{
+    color: blue;
+    font-size: 30px;
+    width: 60%;
+    font-weight: 600px;
+}
+.home .title{
+    font-size: 50px;
+    font-weight: bold;
+    color: blue;
+    margin-left: 20px;
+}
+.persons .humain{
+    width: 24%;
+    height: 350px;
+    margin: 30px 0;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 20px;
+}
+.persons .humain img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.persons .humain1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 2px;
+}
+.persons .humain:hover .descr{
+    transform: translateY(-120px);
+}
+.persons .humain .descr h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.persons .humain .descr p{
+    font-size: 14px;
+    color: #999;
+}
+.persons .humain:hover img{
+    transform: translateY(-120px);
+}
+.persons .title{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
